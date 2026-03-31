@@ -16,6 +16,5 @@ This project is a Command Line Interface (CLI) based AI tool that analyzes user 
 
 ## How to Run
 
-1. Clone the repository:
-```bash
-git clone 
+1. Clone the repository:https://github.com/surajpisal845-maker/mental-health-ai-cli.git
+
