@@ -8,15 +8,15 @@ def detect_emotion(text):
     text = text.lower()
 
     if "sad" in text or "depressed" in text or "lonely" in text:
-        return "Sad 😢"
+        return "Sad "
     elif "happy" in text or "excited" in text or "good" in text:
-        return "Happy 😄"
+        return "Happy "
     elif "stress" in text or "exam" in text or "tension" in text:
-        return "Stress 😟"
+        return "Stress "
     elif "angry" in text or "frustrated" in text:
-        return "Angry 😠"
+        return "Angry "
     else:
-        return "Neutral 🙂"
+        return "Neutral "
 
 # =========================
 # Suggestion Engine
@@ -69,14 +69,14 @@ def analyze_text():
     text = input("\nEnter your feelings: ").strip()
 
     if text == "":
-        print("⚠️ Input cannot be empty!")
+        print(" Input cannot be empty!")
         return
 
     emotion = detect_emotion(text)
     suggestion = give_suggestion(emotion)
 
-    print("\n🧠 Detected Emotion:", emotion)
-    print("💡 Suggestion:", suggestion)
+    print("\n Detected Emotion:", emotion)
+    print(" Suggestion:", suggestion)
 
     save_history(text, emotion, suggestion)
 
@@ -103,7 +103,7 @@ def show_menu():
 # MAIN LOOP
 # =========================
 def main():
-    print("Welcome to Mental Health AI Assistant 💙")
+    print("Welcome to Mental Health AI Assistant ")
 
     while True:
         show_menu()
@@ -116,10 +116,10 @@ def main():
         elif choice == "3":
             show_help()
         elif choice == "4":
-            print("\nGoodbye 👋 Stay strong!")
+            print("\nGoodbye  Stay strong!")
             break
         else:
-            print("❌ Invalid choice! Please try again.")
+            print(" Invalid choice! Please try again.")
 
 # Run program
 if __name__ == "__main__":
